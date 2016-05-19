@@ -1,2 +1,40 @@
 # interesting
-my interesting things
+####my interesting things
+---
+- java
+  - I/O NIO
+  - multiple thread
+  - xml
+  - jni
+  - jmx
+- Spring
+- myBatis
+- JSR
+  - servlet
+  - jdbc
+  - jax-rs
+  - jms
+  - jta
+- 服务器
+  - Nginx
+  - tomcat
+  - jetty
+  - jBoss
+- 服务器框架
+  - netty
+  - mina
+  
+  - dubbo
+- RPC
+  - thrift
+  - protobuf
+- 编译器
+  - Antlr
+  - JavaCC
+- 推荐算法
+- 数据挖掘
+- 机器学习
+- 自然语言理解
+  - 文本挖掘
+  - 信息检索
+  - 语义理解
