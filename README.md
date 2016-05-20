@@ -1,5 +1,5 @@
-# interesting
-####my interesting things
+# Interesting
+####interesting things
 ---
 - java
   - I/O NIO
@@ -31,6 +31,22 @@
 - 编译器
   - Antlr
   - JavaCC
+- 消息
+  - ActiveMQ
+  - RabbitMQ
+- 搜索
+  - lucene
+  - solr
+  - elastic search
+- NoSql
+  - 键值
+    - redis
+    - Memcached
+  - 列存储
+    - Hbase
+  - 文档
+    - MongoDB
+  - 图形
 - 推荐算法
 - 数据挖掘
 - 机器学习
