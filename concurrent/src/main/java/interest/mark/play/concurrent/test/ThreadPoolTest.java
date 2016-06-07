@@ -1,8 +1,6 @@
 package interest.mark.play.concurrent.test;
 
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import interest.mark.play.concurrent.service.ThreadPoolService;
 
 /**
  * Created by mark on 16/6/7.
@@ -27,19 +25,12 @@ public class ThreadPoolTest implements Runnable {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        ThreadPoolExecutor executor = new ThreadPoolExecutor(5,8,200, TimeUnit.MILLISECONDS
-                ,new ArrayBlockingQueue<Runnable>(5));
 
         for (int i = 0; i < 15; i++) {
             ThreadPoolTest test = new ThreadPoolTest(i);
-
-            executor.execute(test);
-
-            System.out.println("线程数"+executor.getPoolSize()+",等待数"+executor.getQueue().size()
-                    +",已完成"+executor.getCompletedTaskCount());
+            ThreadPoolService.runTask(test);
 //            Thread.sleep(500);
         }
 
-        executor.shutdown();
     }
 }
