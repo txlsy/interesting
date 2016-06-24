@@ -24,15 +24,13 @@ public class FairLock {
                 if (!isLocked){
                     isLocked = true;
                     lockingThread = Thread.currentThread();
+                    waitingThreads.remove(object);
                     break;
                 }
             }
             System.out.println(Thread.currentThread().getName() + " 2");
             object.doWait();
             System.out.println(Thread.currentThread().getName() + " 3");
-        }
-        synchronized (this) {
-            waitingThreads.remove(object);
         }
         System.out.println(Thread.currentThread().getName()+" 4");
 
