@@ -7,6 +7,7 @@
   - xml
   - jni
   - jmx
+  - jvm
 - Spring
 - myBatis
 - JSR
@@ -20,10 +21,11 @@
   - tomcat
   - jetty
   - jBoss
+  - webSphere
 - 服务器框架
   - netty
   - mina
-  
+- 服务化
   - dubbo
 - RPC
   - thrift
@@ -39,12 +41,12 @@
   - solr
   - elastic search
 - NoSql
-  - 键值
+  - 键值型
     - redis
     - Memcached
-  - 列存储
+  - 列存储型
     - Hbase
-  - 文档
+  - 文档型
     - MongoDB
   - 图形
 - 推荐算法
